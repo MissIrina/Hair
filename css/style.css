@@ -1,0 +1,162 @@
+
+/* Normalize.css for cross-browsing */
+@import "normalize.css";
+
+/* Global Layout Set-up */
+* :after :before{ 
+  box-sizing: border-box; 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  background: #f7f5f0;
+}
+
+/* Link Styles */
+a {
+  text-decoration: none;
+  color: #0499ff;
+}
+a:hover {
+   color: #6633ff;
+}
+
+.logo h1 {
+  text-transform: uppercase;
+}
+
+.wrapper {
+  border-bottom: solid 2px black;
+ }
+
+ header {
+  background:url(../images/background.jpg) no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+  min-height: 250px;
+  box-shadow: inset 0 0 0 20px #f7f5f0;
+}
+
+header h1 {
+  margin: 2px 7px;
+  color: #D35400  ;
+  text-align: right;
+  font-family: 'Cinzel Decorative';
+  font-size: 230%;
+  text-shadow:5px 5px 5px black;
+}
+
+header p {
+  margin: -7px 10px;
+  color: #D35400  ;
+  text-align: right;
+  font-family: 'Rochester', sans-serif ;
+  text-shadow: -1px 0 black;
+}
+
+.column {
+  margin: 35px;
+  padding: 5px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  box-shadow:inset 0 0 10px #000000;
+  border-radius: 10px;
+}
+
+.column:hover {
+  box-shadow:inset 0 0 20px #000000;
+}
+.column h2 {
+  font-size: 30px;
+  font-family: 'Rochester', sans-serif ;
+  margin-bottom: 5px;
+}
+
+.gallery h1{
+  font-family: 'Rochester', sans-serif ;
+}
+
+/*  Gallery           */
+/* RESPONSIVE IMAGES */
+img{ max-width:100%; height:auto;}
+
+#images {
+  display: inline-block;
+  margin: 30px;
+}
+#images img {
+  width:85px;
+  padding:5px;
+  margin-left: 5px;
+  margin-top: 3px;
+}
+
+#full {
+  display: inline-block;
+  width: 400px;
+  height:414px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  margin-bottom: 5px;
+}
+#full:hover {
+  box-shadow:inset 0 0 20px #000000;
+}
+
+.selected {
+  box-shadow:inset 0 0 25px #000000;
+}
+
+#caption {
+  clear:left;
+}
+
+footer {
+  width: 100%;
+  margin-top: -1px;
+  padding: 40px 0px;
+  font-weight: bold;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+
+  .about {
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  header {
+    min-height: 500px;
+    box-shadow: none;
+    background-size: cover ;
+  }
+  header h1 {
+    padding: 10px 10px;
+    font-size: 80px;
+  }
+  header p {
+    margin: -15px 10px;
+    text-shadow: -1px 0 black;
+    font-size: 40px;
+  }
+
+  #images {
+    padding-right: 48px;
+  }
+  #images img {
+
+    width: 150px;
+  }
+
+  #full {
+    width: 550px;
+    height:614px;
+  }
+}

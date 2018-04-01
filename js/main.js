@@ -41,7 +41,7 @@ jQuery(function(){
         FooNav.init({
           classes: 'fon-shadow',
           items: {
-            container: '.wrapper',
+            container: '.sidenav',
             selector: 'h1,h2,h3,h4,h5,h6',
             exclude: '#comments'
           },
